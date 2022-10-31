@@ -1,0 +1,40 @@
+// 公共混合器
+
+.text_hidden {
+  overflow: hidden; //超出的文本隐藏
+  text-overflow: ellipsis; //溢出用省略号显示
+  white-space: nowrap; //溢出不换行
+}
+
+//文字多余隐藏
+.text_line_hidden (@line) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: @line; //可以显示行数
+}
+
+.absolute_full_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// 绝对定位居中
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// flex定位居中
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

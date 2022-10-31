@@ -1,0 +1,39 @@
+// 全局通用样式
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+  background: #F6F6F6 !important;
+}
+
+.page_wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1640px;
+  clip-path: border-box;
+
+  @media (max-width: 576px) {
+    padding: 0 16px;
+  }
+}
+
+img {
+  vertical-align: baseline !important;
+}
+
+.ant-modal-content {
+  border-radius: 10px !important;
+}
+
+.antd_affix_absolute {
+  position: absolute !important;
+  top: auto !important;
+  bottom: 0 !important;
+}
