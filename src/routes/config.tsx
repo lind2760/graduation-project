@@ -9,7 +9,7 @@ const routes = [
   },
   { path: "/", element: <Navigate to="home" /> },
 ];
-function LazyElement(props: { importFunc: () => Promise<any> }) {
+function LazyElement(props: { importFunc: <T>() => Promise<T> }) {
   const { importFunc } = props;
   const LazyComponent = lazy(importFunc);
   return (
